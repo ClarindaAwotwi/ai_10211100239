@@ -52,10 +52,6 @@ Every section can be chosen from the sidebar. The LLM section generates answers 
 
 # Datasets Used for LLM Q&A
 
-- Ghana Election Results (CSV) [GitHub]
-(https://github.com/GodwinDansoAcity/acitydataset/blob/main/Ghana_Election_Result.csv)
-- 2025 Budget Statement (PDF) [MoFEP]
-(https://mofep.gov.gh/sites/default/files/budget-statements2025-Budget-Statement-and-Economic-Policy_v4.pdf)
 - Academic City Handbook (PDF) [Academic City]
 (https://acity.edu.gh/downloads/handbook.pdf) 
 
