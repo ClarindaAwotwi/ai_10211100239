@@ -30,9 +30,7 @@ ML_AI_Explorer/
 ├── requirements.txt
 ├── LLM Architecture.draw.io.png
 ├── datasets/
-│   ├── Ghana_Election_Result.csv
-│   ├── 2025-Budget-Statement-and-Economic-Policy_v4.pdf
-│   └── ACity_handbook.pdf
+│   ├── ACity_handbook.pdf
 ├── sections/
 │   ├── __init__.py
 │   ├── home.py
