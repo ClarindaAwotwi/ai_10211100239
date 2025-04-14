@@ -47,7 +47,7 @@ def load_csv_data(file_path):
 def llm_multimodal_section():
     global model  # ✅ This ensures you're using the model defined above
 
-    st.title("🧠 Gemini Q&A on Documents & Data")
+    st.title(" Gemini Q&A on Documents & Data")
     st.write("Ask questions about datasets and documents using Gemini AI.")
 
     if model is None:
@@ -55,28 +55,28 @@ def llm_multimodal_section():
         return
 
     datasets = {
-        "🗳️ Ghana Election Results (CSV)": "datasets/Ghana_Election_Result.csv",
-        "📊 2025 Budget Statement (PDF)": "datasets/2025-Budget-Statement-and-Economic-Policy_v4.pdf",
-        "🎓 ACity Handbook (PDF)": "datasets/ACity_handbook.pdf"
+        " Ghana Election Results (CSV)": "data/Ghana_Election_Result.csv",
+        " 2025 Budget Statement (PDF)": "data/2025-Budget-Statement-and-Economic-Policy_v4.pdf",
+        " ACity Handbook (PDF)": "data/ACity_handbook.pdf"
     }
 
     dataset_name = st.selectbox("Choose a dataset to analyze:", list(datasets.keys()))
-    selected_path = datasets[dataset_name]
+    selected_path = data[dataset_name]
     content = ""
 
     if selected_path.endswith(".csv"):
         df = load_csv_data(selected_path)
         if df is not None:
-            st.subheader("📈 Dataset Preview")
+            st.subheader(" Dataset Preview")
             st.dataframe(df.head())
             content = df.to_string(index=False)
 
     elif selected_path.endswith(".pdf"):
         content = extract_text_from_pdf(selected_path)
-        st.subheader("📄 PDF Preview")
+        st.subheader(" PDF Preview")
         st.text(content[:1000] + "..." if len(content) > 1000 else content)
 
-    st.subheader("💬 Ask a Question About the Selected Dataset")
+    st.subheader(" Ask a Question About the Selected Dataset")
     question = st.text_input("Enter your question below:")
     if st.button("Submit Question"):
         if not question or not content:
