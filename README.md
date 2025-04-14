@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the root:
 
-GEMINI_API_KEY=AIzaSyCLIvHdF8nvW5E7B-Z3mLpLyN0kCErb4ZE
+GEMINI_API_KEY
 
 
 
