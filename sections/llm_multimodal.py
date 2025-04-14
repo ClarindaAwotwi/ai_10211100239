@@ -55,13 +55,11 @@ def llm_multimodal_section():
         return
 
     datasets = {
-        " Ghana Election Results (CSV)": "data/Ghana_Election_Result.csv",
-        " 2025 Budget Statement (PDF)": "data/2025-Budget-Statement-and-Economic-Policy_v4.pdf",
-        " ACity Handbook (PDF)": "data/ACity_handbook.pdf"
+        " ACity Handbook (PDF)": "datasets/ACity_handbook.pdf"
     }
 
     dataset_name = st.selectbox("Choose a dataset to analyze:", list(datasets.keys()))
-    selected_path = data[dataset_name]
+    selected_path = datasets[dataset_name]
     content = ""
 
     if selected_path.endswith(".csv"):
