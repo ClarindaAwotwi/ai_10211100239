@@ -46,7 +46,8 @@ Every section can be chosen from the sidebar. The LLM section generates answers 
 
 # LLM Architecture Diagram
 
-![LLM Q&A Architecture](LLM Architecture.drawio.png)
+![LLM Architecture drawio](https://github.com/user-attachments/assets/cace5e5f-8450-4a1e-bea8-650b28106295)
+
 
 
 
@@ -65,7 +66,9 @@ cd ai_10211100239
 python -m venv venv
 pip install -r requirements.txt
 
-
+# Deployment Link
+[
+](https://ai10211100239.streamlit.app/)
 
 # .env Configuration
 
